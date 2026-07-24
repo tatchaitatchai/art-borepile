@@ -4,6 +4,8 @@
 ระบบแห้ง/ระบบเปียก เสาเข็มไมโครไพล์ และรถสว่านเจาะ
 สร้างด้วย Next.js (App Router) + TypeScript + Tailwind CSS v4 เน้น SEO และความเบา (static export, ภาพเป็น WebP ทั้งหมด)
 
+<!-- deploy test: Cloudflare Workers Builds -->
+
 สร้างใหม่จากเว็บไซต์เดิม `xn--22c5b5af0bpa4bd2a9igc3h1c.com` (เออาร์ทีเสาเข็มเจาะ.com)
 
 ## เริ่มใช้งาน
