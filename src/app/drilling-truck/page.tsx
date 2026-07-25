@@ -54,7 +54,7 @@ export default function DrillingTruckPage() {
 
         <section className="bg-black/[0.02] py-16">
           <div className="mx-auto grid max-w-6xl gap-6 px-4 lg:grid-cols-2">
-            <div className="rounded-2xl border border-black/5 bg-white p-7">
+            <div className="border-2 border-ink bg-white p-7">
               <h2 className="text-xl font-bold text-ink">สเปกและความสามารถ</h2>
               <dl className="mt-5 divide-y divide-black/5">
                 {specs.map((s) => (
@@ -66,12 +66,12 @@ export default function DrillingTruckPage() {
               </dl>
             </div>
 
-            <div className="rounded-2xl border border-black/5 bg-white p-7">
+            <div className="border-2 border-ink bg-white p-7">
               <h2 className="text-xl font-bold text-ink">ข้อดีของรถสว่านเจาะ</h2>
               <ul className="mt-5 space-y-2.5">
                 {advantages.map((a) => (
                   <li key={a} className="flex items-start gap-2.5 text-sm text-ink/70">
-                    <span className="mt-0.5 inline-flex h-4.5 w-4.5 shrink-0 items-center justify-center rounded-full bg-brand/15 text-brand">
+                    <span className="mt-0.5 inline-flex h-4.5 w-4.5 shrink-0 items-center justify-center border border-brand bg-brand/15 text-brand">
                       <CheckIcon className="h-2.5 w-2.5" />
                     </span>
                     {a}

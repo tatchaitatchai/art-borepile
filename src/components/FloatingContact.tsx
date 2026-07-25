@@ -9,14 +9,14 @@ export default function FloatingContact() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="LINE"
-        className="inline-flex h-13 w-13 items-center justify-center rounded-full bg-[#06C755] p-3.5 text-white shadow-lg transition hover:scale-110"
+        className="inline-flex h-13 w-13 items-center justify-center border-2 border-ink bg-[#06C755] p-3.5 text-white shadow-hard-sm transition hover:-translate-y-0.5"
       >
         <LineIcon className="h-6 w-6" />
       </a>
       <a
         href={`tel:${SITE.phone}`}
         aria-label={`โทร ${SITE.phoneDisplay}`}
-        className="inline-flex h-13 w-13 items-center justify-center rounded-full bg-brand p-3.5 text-white shadow-lg shadow-brand/40 transition hover:scale-110"
+        className="inline-flex h-13 w-13 items-center justify-center border-2 border-ink bg-brand p-3.5 text-white shadow-hard-sm transition hover:-translate-y-0.5"
       >
         <PhoneIcon className="h-6 w-6" />
       </a>

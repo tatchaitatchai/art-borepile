@@ -54,7 +54,7 @@ export default function MicropilePage() {
             <h2 className="text-center text-xl font-bold text-ink">เลือกขนาดเสาเข็มไมโครไพล์ได้ตามหน้างาน</h2>
             <div className="mt-8 grid gap-5 sm:grid-cols-3">
               {pileTypes.map((p) => (
-                <div key={p.name} className="rounded-2xl border border-black/5 bg-white p-6">
+                <div key={p.name} className="border-2 border-ink bg-white p-6">
                   <h3 className="font-bold text-ink">{p.name}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-ink/65">{p.desc}</p>
                 </div>
@@ -71,8 +71,8 @@ export default function MicropilePage() {
             <SectionHeading eyebrow="เหมาะกับงานแบบไหน" title="ไมโครไพล์ เหมาะกับพื้นที่แบบนี้" />
             <ul className="mx-auto mt-10 grid max-w-3xl gap-4 sm:grid-cols-2">
               {useCases.map((u) => (
-                <li key={u} className="flex items-start gap-3 rounded-xl bg-black/[0.02] p-5 text-sm text-ink/70">
-                  <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand/15 text-brand">
+                <li key={u} className="flex items-start gap-3 border-2 border-ink/10 bg-black/[0.02] p-5 text-sm text-ink/70">
+                  <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center border border-brand bg-brand/15 text-brand">
                     <CheckIcon className="h-3 w-3" />
                   </span>
                   {u}

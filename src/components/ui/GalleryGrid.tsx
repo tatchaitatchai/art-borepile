@@ -7,7 +7,7 @@ export default function GalleryGrid({ images }: { images: GalleryImage[] }) {
       {images.map((img, i) => (
         <div
           key={img.src}
-          className="group relative aspect-4/3 overflow-hidden rounded-xl bg-black/5"
+          className="group relative aspect-4/3 overflow-hidden border-2 border-ink bg-black/5"
         >
           <Image
             src={img.src}
@@ -15,7 +15,7 @@ export default function GalleryGrid({ images }: { images: GalleryImage[] }) {
             fill
             sizes="(min-width: 1024px) 23vw, (min-width: 640px) 31vw, 46vw"
             loading={i < 4 ? "eager" : "lazy"}
-            className="object-cover transition duration-300 group-hover:scale-105"
+            className="object-cover grayscale-[0.2] transition duration-300 group-hover:scale-105 group-hover:grayscale-0"
           />
         </div>
       ))}

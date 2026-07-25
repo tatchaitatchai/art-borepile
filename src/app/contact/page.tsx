@@ -35,9 +35,9 @@ export default function ContactPage() {
             <div className="space-y-4 lg:col-span-2">
               <a
                 href={`tel:${SITE.phone}`}
-                className="flex items-center gap-4 rounded-2xl border-2 border-black/5 p-6 transition hover:-translate-y-0.5 hover:border-brand"
+                className="flex items-center gap-4 border-2 border-ink p-6 transition hover:-translate-y-0.5 hover:border-brand"
               >
-                <span className="inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-brand/10 text-brand">
+                <span className="inline-flex h-14 w-14 shrink-0 items-center justify-center border-2 border-ink bg-brand/10 text-brand">
                   <PhoneIcon className="h-6 w-6" />
                 </span>
                 <div>
@@ -50,9 +50,9 @@ export default function ContactPage() {
                 href={SITE.line.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 rounded-2xl border-2 border-black/5 p-6 transition hover:-translate-y-0.5 hover:border-[#06C755]"
+                className="flex items-center gap-4 border-2 border-ink p-6 transition hover:-translate-y-0.5 hover:border-[#06C755]"
               >
-                <span className="inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#06C755]/10 text-[#06C755]">
+                <span className="inline-flex h-14 w-14 shrink-0 items-center justify-center border-2 border-ink bg-[#06C755]/10 text-[#06C755]">
                   <LineIcon className="h-6 w-6" />
                 </span>
                 <div>
@@ -63,9 +63,9 @@ export default function ContactPage() {
 
               <a
                 href={`mailto:${SITE.email}`}
-                className="flex items-center gap-4 rounded-2xl border-2 border-black/5 p-6 transition hover:-translate-y-0.5 hover:border-brand"
+                className="flex items-center gap-4 border-2 border-ink p-6 transition hover:-translate-y-0.5 hover:border-brand"
               >
-                <span className="inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-brand/10 text-brand">
+                <span className="inline-flex h-14 w-14 shrink-0 items-center justify-center border-2 border-ink bg-brand/10 text-brand">
                   <MailIcon className="h-6 w-6" />
                 </span>
                 <div>
@@ -74,8 +74,8 @@ export default function ContactPage() {
                 </div>
               </a>
 
-              <div className="flex items-start gap-4 rounded-2xl border-2 border-black/5 p-6">
-                <span className="inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-brand/10 text-brand">
+              <div className="flex items-start gap-4 border-2 border-ink p-6">
+                <span className="inline-flex h-14 w-14 shrink-0 items-center justify-center border-2 border-ink bg-brand/10 text-brand">
                   <PinIcon className="h-6 w-6" />
                 </span>
                 <div>
@@ -85,7 +85,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="overflow-hidden rounded-2xl border-2 border-black/5 lg:col-span-3">
+            <div className="overflow-hidden border-2 border-ink shadow-hard lg:col-span-3">
               <iframe
                 title="แผนที่บริษัท เออาร์ที เสาเข็มเจาะ จำกัด"
                 src={`https://www.google.com/maps?q=${mapQuery}&output=embed`}

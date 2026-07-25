@@ -40,7 +40,7 @@ body {
 }
 
 section[id] {
-  scroll-margin-top: 88px;
+  scroll-margin-top: 96px;
 }
 
 @keyframes fade-up {
@@ -56,4 +56,41 @@ section[id] {
 
 .animate-fade-up {
   animation: fade-up 0.7s ease both;
+}
+
+/* ระบบดีไซน์ "อินดัสเทรียล" — เหลี่ยม, เงาทึบ, ลายเส้นบลูปรินต์ */
+.shadow-hard {
+  box-shadow: 6px 6px 0 0 var(--ink);
+}
+
+.shadow-hard-sm {
+  box-shadow: 4px 4px 0 0 var(--ink);
+}
+
+.shadow-hard-brand {
+  box-shadow: 6px 6px 0 0 var(--brand);
+}
+
+.blueprint-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.diagonal-notch {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 40px));
+}
+
+.marquee-track {
+  animation: marquee 28s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }

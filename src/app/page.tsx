@@ -12,7 +12,7 @@ import MobileContactBar from "@/components/MobileContactBar";
 export default function Home() {
   return (
     <>
-      <Navbar transparent />
+      <Navbar />
       <main>
         <Hero />
         <Services />

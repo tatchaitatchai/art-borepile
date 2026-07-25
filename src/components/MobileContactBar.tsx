@@ -3,7 +3,7 @@ import { PhoneIcon, LineIcon, MailIcon } from "./icons";
 
 export default function MobileContactBar() {
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 flex border-t border-black/10 bg-white shadow-[0_-4px_16px_rgba(0,0,0,0.08)] lg:hidden">
+    <div className="fixed inset-x-0 bottom-0 z-40 flex border-t-2 border-ink bg-white shadow-[0_-4px_16px_rgba(0,0,0,0.08)] lg:hidden">
       <a
         href={`mailto:${SITE.email}`}
         aria-label="อีเมล"
